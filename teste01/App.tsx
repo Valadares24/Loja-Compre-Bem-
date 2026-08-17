@@ -1,7 +1,22 @@
 import { useState } from 'react';
-import { View, Text, Image, Button, StyleSheet } from 'react-native';
+import { View, Text, Image, Button, StyleSheet, RootStackParamList } from 'react-native';
 
-// Array de mock atualizado com a nova prop "categoria"
+
+
+export type Produto = {
+  id: number;
+  nome: string;
+  preco: number;
+  imagem: string;
+  categoria: string;
+
+}
+//
+// 
+// 
+//  Array de mock atualizado com a nova prop "categoria"
+type Props = NavigationProp<RootStackParamList, 'TelaListaProdutos'>;
+
 const produtosMock = [
   { 
     id: '1', 
