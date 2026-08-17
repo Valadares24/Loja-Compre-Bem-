@@ -7,7 +7,7 @@ export interface Produto{
     imgUrl: string;
 }
 
-export type RootstackParamList = {
+export type RootStackParamList = {
     Home: undefined;
     DetalheProduto: {produto: Produto};
 }
